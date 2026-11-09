@@ -1,0 +1,162 @@
+[
+  {
+    "output": "assets/hero-aoko.webp",
+    "source": "jallpachd/quality540/01683-IMG1026.png",
+    "source_sha256": "c1738c24f8d7266faac9d245cbe4d49fe8e07614bdebd40ef568ebe8537a4019",
+    "size": [
+      1024,
+      614
+    ],
+    "bytes": 59972,
+    "type": "illustration; not device capture"
+  },
+  {
+    "output": "assets/hero-mansion.webp",
+    "source": "jallpachd/quality540/00003-IMG3002.png",
+    "source_sha256": "c66398d1aa9f94113f77bf802b2d10f56d516eceb2fa3c797dbbeccfe8c2b999",
+    "size": [
+      1024,
+      614
+    ],
+    "bytes": 117406,
+    "type": "illustration; not device capture"
+  },
+  {
+    "output": "assets/hero-magic.webp",
+    "source": "jallpachd/quality540/01690-IMG1033.png",
+    "source_sha256": "50dd97b861cc2b8551abd70a42e6c1529e017596119a90c7a46d33e286dfc654",
+    "size": [
+      1024,
+      760
+    ],
+    "bytes": 60994,
+    "type": "illustration; not device capture"
+  },
+  {
+    "output": "assets/story-mansion.webp",
+    "source": "jallpachd/quality540/00021-IMG3020.png",
+    "source_sha256": "b59409b6a13a5ddaba6711280b5a292a96f73358fa20d4922a38db1fec4d5b88",
+    "size": [
+      1024,
+      614
+    ],
+    "bytes": 235662,
+    "type": "illustration; not device capture"
+  },
+  {
+    "output": "assets/01-title.webp",
+    "source": "mofa-vita/doc/screenshots/01-title.jpg",
+    "source_sha256": "8a65abd82f35f1c42f04a5b8547d1992d48ec50de5e0520172014f6a3fe02516",
+    "size": [
+      960,
+      544
+    ],
+    "bytes": 75696,
+    "type": "historical device capture; not latest FPS benchmark"
+  },
+  {
+    "output": "assets/02-voices.webp",
+    "source": "mofa-vita/doc/screenshots/02-voices.jpg",
+    "source_sha256": "ef46e152f98b8ae72b6259c7690e0f8f7e2394e47753a6a3f20f929f56130e52",
+    "size": [
+      960,
+      544
+    ],
+    "bytes": 62624,
+    "type": "historical device capture; not latest FPS benchmark"
+  },
+  {
+    "output": "assets/03-archive.webp",
+    "source": "mofa-vita/doc/screenshots/03-archive.jpg",
+    "source_sha256": "1f2ee130ae72a8cb53739f049f62aa4cd08a3e5671ebf925fcb71372ba919319",
+    "size": [
+      960,
+      544
+    ],
+    "bytes": 79462,
+    "type": "historical device capture; not latest FPS benchmark"
+  },
+  {
+    "output": "assets/04-story.webp",
+    "source": "mofa-vita/doc/screenshots/04-story.jpg",
+    "source_sha256": "96e3922563768b5b6ff6a619405e2de2a4884d13ab79b87835d45f25b6ae6151",
+    "size": [
+      960,
+      544
+    ],
+    "bytes": 39886,
+    "type": "historical device capture; not latest FPS benchmark"
+  },
+  {
+    "output": "assets/history-1.webp",
+    "source": "user-provided/1.png",
+    "source_sha256": "2a37cccf737db549286c984f7e78aac06486e6a09251f5162085bf3ed48b9bce",
+    "size": [
+      371,
+      337
+    ],
+    "bytes": 90950,
+    "type": "historical video listing screenshot; user-provided"
+  },
+  {
+    "output": "assets/history-2.webp",
+    "source": "user-provided/2.png",
+    "source_sha256": "6380e3a442c3dce6a8884f0cb64e60dec465147f79a6a03e0af4cfa80af7e4ec",
+    "size": [
+      389,
+      371
+    ],
+    "bytes": 88154,
+    "type": "historical video listing screenshot; user-provided"
+  },
+  {
+    "output": "assets/history-3.webp",
+    "source": "user-provided/3.png",
+    "source_sha256": "edf731594c607a30c3680aecf47630ac7058893b60f275daf4d3e0b25f9c2086",
+    "size": [
+      382,
+      338
+    ],
+    "bytes": 53830,
+    "type": "historical video listing screenshot; user-provided"
+  },
+  {
+    "output": "assets/history-4.webp",
+    "source": "user-provided/4.png",
+    "source_sha256": "47da77fbfd940996ebff29d8daf12998cedd106a13a6f5c51532a8f884147761",
+    "size": [
+      392,
+      349
+    ],
+    "bytes": 73838,
+    "type": "historical video listing screenshot; user-provided"
+  },
+  {
+    "output": "assets/history-5.webp",
+    "source": "user-provided/5.png",
+    "source_sha256": "3e6a1ac5e468deb944a845c2449b655cf98c6a3f3ca9f03cb64d0e65db79e4a5",
+    "size": [
+      390,
+      378
+    ],
+    "bytes": 90556,
+    "type": "historical video listing screenshot; user-provided"
+  },
+  {
+    "output": "assets/vita-device.webp",
+    "source": "user-provided/codex-clipboard-8633e31d-38cd-4269-bab3-6c38d299f9a3.png",
+    "source_sha256": "9d3051f1c57db05c6b22ee82a607fe9b8d72493e30cc0eca52ec120a09d26796",
+    "size": [
+      1154,
+      519
+    ],
+    "bytes": 81350,
+    "crop": [
+      143,
+      131,
+      1297,
+      650
+    ],
+    "type": "user-provided transparent PS Vita frame; screenshot composited separately"
+  }
+]

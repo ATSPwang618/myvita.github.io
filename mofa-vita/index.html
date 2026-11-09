@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08111b">
+  <meta name="description" content="将那个魔法之夜，带回掌心。魔法使之夜 PS Vita 非官方移植项目：原生 GXM、960×540 演出、澄空中文。了解项目特色、实机画面与安装方式。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="魔法使之夜 · PS Vita | 将魔法带回掌心">
+  <meta property="og:description" content="为 PS Vita 重新施展的魔法。探索原生 GXM 移植、实机画面与项目故事。">
+  <meta property="og:image" content="https://atspwang618.github.io/myvita.github.io/mofa-vita/assets/hero-aoko.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>魔法使之夜 · PS Vita | 将魔法带回掌心</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/hero-aoko.webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-diagonal" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-4 1-4-2-6-2m12 5v-4c0-1 .1-1.5-.5-2 3-.4 6-1.5 6-6a5 5 0 0 0-1.3-3.5A5 5 0 0 0 19 3s-1-.3-3.5 1.3a13 13 0 0 0-7 0C6 2.7 5 3 5 3a5 5 0 0 0-.2 3.5A5 5 0 0 0 3.5 10c0 4.5 3 5.6 6 6-.6.5-.5 1-.5 2v4"/></symbol>
+    <symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 1v5m6-5v5M9 18v5m6-5v5M1 9h5m-5 6h5m12-6h5m-5 6h5"/><rect x="9" y="9" width="6" height="6" rx="1"/></symbol>
+    <symbol id="i-frame" viewBox="0 0 24 24"><path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6"/><rect x="7" y="7" width="10" height="10" rx="1"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4L12 3Zm7-2v4m-2-2h4"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M14 4h6v6m-6 0 6-6M10 20H4v-6m6 0-6 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M15 8V4H4v11h4"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="魔法使之夜 PS Vita 首页"><img src="assets/favicon.svg" width="34" height="34" alt=""><span>魔法使之夜<small>THE VITA PROJECT</small></span></a>
+    <nav class="desktop-nav" aria-label="主导航"><a href="#project">移植计划</a><a href="#gallery">实机画面</a><a href="#history">开发历程</a><a href="#start">开始旅程</a></nav>
+    <a class="header-github" aria-label="GitHub 项目仓库" href="https://github.com/ATSPwang618/mofa-vita" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg><span>GitHub</span><svg class="icon small"><use href="#i-diagonal"/></svg></a>
+    <button class="menu-toggle" aria-label="打开导航" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+  </header>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="移动导航" hidden><a href="#project">移植计划 <span>01</span></a><a href="#gallery">实机画面 <span>02</span></a><a href="#history">开发历程 <span>03</span></a><a href="#start">开始旅程 <span>04</span></a></nav>
+
+  <main id="main">
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true"><img class="hero-image is-active" src="assets/hero-aoko.webp" width="1024" height="614" alt="" fetchpriority="high"><img class="hero-image" data-src="assets/hero-mansion.webp" width="1024" height="614" alt=""><img class="hero-image" data-src="assets/hero-magic.webp" width="1024" height="760" alt=""></div>
+      <div class="hero-shade"></div><div class="stars" aria-hidden="true"></div>
+      <div class="hero-orbit" aria-hidden="true"></div>
+      <div class="hero-content page-width">
+        <div class="eyebrow hero-eyebrow"><span class="live-dot"></span> A FAN-MADE PORT FOR PLAYSTATION VITA</div>
+        <p class="hero-preface">有些故事，值得随身携带。</p>
+        <h1 id="hero-title">魔法使之夜</h1>
+        <p class="hero-english">WITCH ON THE HOLY NIGHT</p>
+        <div class="edition"><span></span> PS VITA EDITION <span></span></div>
+        <p class="hero-description">将那个魔法之夜，带回掌心。<br>一场为 PS Vita 重新启程的视觉小说之旅。</p>
+        <div class="hero-actions"><a class="button primary" href="#start">开启掌中之旅<svg class="icon"><use href="#i-arrow"/></svg></a><a class="text-link" href="#gallery"><span class="play-icon">▷</span> 看看实机画面</a></div>
+        <div class="hero-tags"><span>原生 GXM</span><i></i><span>960 × 540</span><i></i><span>澄空中文</span></div>
+      </div>
+      <div class="hero-bottom page-width">
+        <a class="scroll-cue" href="#project"><span class="scroll-line"></span>向下探索 <span>SCROLL TO DISCOVER</span></a>
+        <div class="scene-picker" role="group" aria-label="切换首页原画"><span class="scene-label" aria-live="polite">01 / 苍青之夜</span><button class="scene-button is-active" data-scene="0" aria-label="显示苍青之夜原画" aria-pressed="true"><span>01</span></button><button class="scene-button" data-scene="1" aria-label="显示洋馆灯火原画" aria-pressed="false"><span>02</span></button><button class="scene-button" data-scene="2" aria-label="显示魔法瞬间原画" aria-pressed="false"><span>03</span></button></div>
+      </div>
+      <span class="hero-credit">ARTWORK FROM THE GAME · 宣传原画</span>
+    </section>
+
+    <div class="spec-strip"><div class="page-width spec-inner"><div><span class="spec-number">960<span> × </span>540</span><span class="spec-label">原生演出画布</span></div><div><span class="spec-number">GXM<span> / </span>Native</span><span class="spec-label">为 Vita 原生构建</span></div><div><span class="spec-number">Open<span> / </span>Source</span><span class="spec-label">让热爱继续生长</span></div><span class="strip-mark" aria-hidden="true">✧</span></div></div>
+
+    <section id="project" class="project section-space page-width">
+      <div class="section-kicker reveal"><span>01 / THE PROJECT</span><span class="kicker-line"></span>让经典，再次相遇</div>
+      <div class="project-layout">
+        <div class="project-copy reveal"><h2>熟悉的魔法。<br>全新的<span class="accent">掌中舞台。</span></h2><p>洋馆的灯火、冬日的街道，还有那个不曾忘记的夜晚。现在，合上电脑，让故事跟着你出发。</p><p>基于开源 knife 引擎，为 PS Vita 打造原生 GXM 渲染与掌机适配。在小小的屏幕上，认真留住每一幕演出的光影与温度。</p><a class="text-link inline-link" href="https://github.com/ATSPwang618/mofa-vita" target="_blank" rel="noopener noreferrer">了解这个开源移植<svg class="icon"><use href="#i-diagonal"/></svg></a></div>
+        <div class="device-scene reveal">
+          <div class="device-orbit" aria-hidden="true"></div><span class="device-note">A LITTLE MAGIC, IN YOUR HANDS.</span>
+          <div class="vita-photo" role="img" aria-label="PS Vita 机身素材与游戏实机画面的合成展示">
+            <img class="vita-photo-screen" src="assets/04-story.webp" width="960" height="544" alt="" loading="lazy">
+            <img class="vita-photo-frame" src="assets/vita-device.webp" width="1154" height="519" alt="" loading="lazy">
+          </div>
+          <div class="device-caption"><span class="live-dot"></span>PS Vita 机身素材 · 屏幕为实机截图</div>
+        </div>
+      </div>
+      <div class="features">
+        <article class="feature reveal"><div class="feature-top"><svg class="icon"><use href="#i-chip"/></svg><span>01</span></div><h3>为这台掌机而生</h3><p>原生 GXM 图形后端，配合离线专用着色器与按材质选路，让每一份图形算力用在演出上。</p><span class="feature-tag">NATIVE GXM RENDERING</span></article>
+        <article class="feature reveal"><div class="feature-top"><svg class="icon"><use href="#i-frame"/></svg><span>02</span></div><h3>小屏幕，大世界</h3><p>960 × 540 演出画布，适配 Vita 屏幕。保留场景构图与中文阅读体验，让故事触手可及。</p><span class="feature-tag">540P VISUAL EXPERIENCE</span></article>
+        <article class="feature reveal"><div class="feature-top"><svg class="icon"><use href="#i-spark"/></svg><span>03</span></div><h3>热爱，是持续的优化</h3><p>从纹理管理到声音缓冲，从实机反馈到体验打磨。开源迭代，让这段旅程走得更远。</p><span class="feature-tag">BUILT WITH CARE</span></article>
+      </div>
+    </section>
+
+    <section class="interlude" aria-label="故事氛围"><img src="assets/story-mansion.webp" width="1024" height="614" alt="夕光中，树木环绕的洋馆" loading="lazy"><div class="interlude-shade"></div><div class="interlude-copy reveal"><span class="eyebrow">BEYOND THE SCREEN, INTO THE NIGHT.</span><p>日常的尽头，<br>是魔法开始的地方。</p><span class="interlude-rule"></span><small>一方小小屏幕，装下整个冬夜。</small></div><span class="image-note">游戏美术 · 非实机截图</span></section>
+
+    <section id="gallery" class="gallery section-space page-width">
+      <div class="section-kicker reveal"><span>02 / ON THE DEVICE</span><span class="kicker-line"></span>真实的掌机体验</div>
+      <div class="section-heading reveal"><div><h2>每一帧，都有<span class="accent">故事。</span></h2><p>标题、对白、书库与设置。看看它在 PS Vita 上的模样。</p></div><span class="gallery-hint"><svg class="icon"><use href="#i-expand"/></svg>点击画面，放大查看</span></div>
+      <div class="gallery-grid">
+        <button class="gallery-item reveal" data-gallery="0" aria-label="放大：标题画面"><div class="gallery-image"><img src="assets/01-title.webp" width="960" height="544" alt="魔法使之夜在 PS Vita 上的标题界面" loading="lazy"><span class="image-expand"><svg class="icon"><use href="#i-expand"/></svg></span></div><span class="gallery-caption"><span><small>01 / A NEW BEGINNING</small>熟悉的开始</span><span>标题画面 ↗</span></span></button>
+        <button class="gallery-item reveal" data-gallery="1" aria-label="放大：剧情画面"><div class="gallery-image"><img src="assets/04-story.webp" width="960" height="544" alt="PS Vita 上的洋馆剧情和澄空中文对白" loading="lazy"><span class="image-expand"><svg class="icon"><use href="#i-expand"/></svg></span></div><span class="gallery-caption"><span><small>02 / THE STORY UNFOLDS</small>沉浸于字里行间</span><span>剧情演出 ↗</span></span></button>
+        <button class="gallery-item reveal" data-gallery="2" aria-label="放大：书库界面"><div class="gallery-image"><img src="assets/03-archive.webp" width="960" height="544" alt="PS Vita 上的章节书库界面" loading="lazy"><span class="image-expand"><svg class="icon"><use href="#i-expand"/></svg></span></div><span class="gallery-caption"><span><small>03 / MEMORIES TO KEEP</small>重访那些瞬间</span><span>章节书库 ↗</span></span></button>
+        <button class="gallery-item reveal" data-gallery="3" aria-label="放大：语音设置"><div class="gallery-image"><img src="assets/02-voices.webp" width="960" height="544" alt="PS Vita 上的角色语音设置界面" loading="lazy"><span class="image-expand"><svg class="icon"><use href="#i-expand"/></svg></span></div><span class="gallery-caption"><span><small>04 / MAKE IT YOURS</small>找到你的阅读节奏</span><span>语音设置 ↗</span></span></button>
+      </div>
+      <p class="gallery-footnote">以上为历史实机截图。演出性能随场景而变化，截图中的帧率不代表全游戏或最新版本的性能。</p>
+    </section>
+
+    <section id="history" class="history-section section-space" aria-labelledby="history-title">
+      <div class="page-width">
+        <div class="section-kicker"><span>03 / 开发历程</span><span class="kicker-line"></span>从一个念头，到掌中的故事</div>
+        <div class="history-heading">
+          <div><h2 id="history-title">三年多，只为这一场重逢。</h2><p>从 2023 年 6 月到 2026 年 11 月。一次次预览、演示与打磨，<br>把「在 Vita 上读到这个故事」的想法，一点点变成现实。</p></div>
+          <p class="history-range"><time datetime="2023-06">2023.06</time><span>—</span><time datetime="2026-11">2026.11</time></p>
+        </div>
+        <ol class="history-timeline">
+          <li class="history-entry">
+            <div class="history-date"><time datetime="2023-06-25"><strong>2023</strong>06.25</time></div>
+            <div class="history-milestone"><h3>故事，从这里启程</h3><p>最初的开发预览公开。「民间重制」「全平台移植计划启动」——一段漫长旅程的起点，留在了这张视频记录里。</p><span class="history-caption">首发预览 · 09:02</span></div>
+            <a class="history-evidence" href="assets/history-1.webp" target="_blank" rel="noopener" aria-label="查看历史截图：2023年6月开发预览"><img src="assets/history-1.webp" width="371" height="337" alt="2023年6月25日：魔法使之夜民间重制、全平台移植计划启动的视频记录" loading="lazy"><span>查看完整记录 ↗</span></a>
+          </li>
+          <li class="history-entry">
+            <div class="history-date"><time datetime="2023-08-29"><strong>2023</strong>08.29</time></div>
+            <div class="history-milestone"><h3>让想法，成为看得见的进展</h3><p>PSV 个人重制版发布开发进展展示。熟悉的雨景出现在掌机画面里，最初的计划有了可以向大家展示的模样。</p><span class="history-caption">个人移植进展 · 13:00</span></div>
+            <a class="history-evidence" href="assets/history-2.webp" target="_blank" rel="noopener" aria-label="查看历史截图：2023年8月开发进展"><img src="assets/history-2.webp" width="389" height="371" alt="2023年8月29日：魔法使之夜 PSV 个人重制版开发进展的视频记录" loading="lazy"><span>查看完整记录 ↗</span></a>
+          </li>
+          <li class="history-entry">
+            <div class="history-date"><time datetime="2024-03-19"><strong>2024</strong>03.19</time></div>
+            <div class="history-milestone"><h3>探索新的引擎路线</h3><p>开发记录走到 Artemis engine 的 UI 适配阶段。为掌机寻找合适的实现方式，也是这段移植历程的一部分。</p><span class="history-caption">Artemis 引擎 / UI 适配 · 04:52</span></div>
+            <a class="history-evidence" href="assets/history-3.webp" target="_blank" rel="noopener" aria-label="查看历史截图：2024年Artemis界面适配"><img src="assets/history-3.webp" width="382" height="338" alt="2024年3月19日：魔夜 PSV 移植版新引擎 Artemis engine UI 适配的视频记录，发布者 Zarathustra" loading="lazy"><span>查看完整记录 ↗</span></a>
+          </li>
+          <li class="history-entry">
+            <div class="history-date"><time datetime="2025-02-24"><strong>2025</strong>02.24</time></div>
+            <div class="history-milestone"><h3>继续打磨，继续展示</h3><p>新的开发预览带来一段 25 分钟的演示。这项持续推进的民间移植，再一次向关注它的人展示进展。</p><span class="history-caption">PSV 民间移植开发演示 · 25:24</span></div>
+            <a class="history-evidence" href="assets/history-4.webp" target="_blank" rel="noopener" aria-label="查看历史截图：2025年开发演示"><img src="assets/history-4.webp" width="392" height="349" alt="2025年2月24日：魔法使之夜 PSV 民间移植版开发演示的视频记录" loading="lazy"><span>查看完整记录 ↗</span></a>
+          </li>
+          <li class="history-entry">
+            <div class="history-date"><strong class="history-phase">最终预告</strong><span>10.31</span></div>
+            <div class="history-milestone"><h3>从开发预览，走向成品展示</h3><p>「魔法使之夜 for Vita（最终预告）」留下了成品展示的记录。从最初预览到这一刻，项目已走过许多次尝试与迭代。</p><span class="history-caption">Zarathustra · 08:02</span><small class="history-date-note">原截图显示 10 月 31 日，未标注年份。</small></div>
+            <a class="history-evidence" href="assets/history-5.webp" target="_blank" rel="noopener" aria-label="查看历史截图：成品展示最终预告"><img src="assets/history-5.webp" width="390" height="378" alt="10月31日：Zarathustra 发布的魔法使之夜 for Vita 最终预告，截图未标注年份" loading="lazy"><span>查看完整记录 ↗</span></a>
+          </li>
+          <li class="history-entry history-present">
+            <div class="history-date"><time datetime="2026-11"><strong>2026</strong>11</time></div>
+            <div class="history-milestone"><h3>魔法，终于来到掌心</h3><p>来到 2026 年 11 月，当前版本以 knife 与原生 GXM 继续打磨演出、资源管理和实机体验。这份跨越三年多的投入，也属于每一位开发者、测试者与支持者。</p><a class="text-link inline-link" href="#project">看看如今的移植版本<svg class="icon"><use href="#i-arrow"/></svg></a></div>
+          </li>
+        </ol>
+        <p class="history-footnote">五张历史视频截图由项目维护者提供。点击可查看完整截图；以上为开发阶段记录，不代表当前版本的技术路线或性能。</p>
+      </div>
+    </section>
+
+    <section id="start" class="start-section section-space"><div class="page-width">
+      <div class="section-kicker reveal"><span>04 / YOUR JOURNEY</span><span class="kicker-line"></span>让故事，从这里继续</div>
+      <div class="section-heading reveal"><div><h2>准备好，<span class="accent">赴一场魔法之约。</span></h2><p>准备你的设备与原版资源，跟随项目文档开始。</p></div><span class="platform-pill"><span class="live-dot"></span>PS VITA HOMEBREW</span></div>
+      <div class="steps">
+        <article class="step reveal"><span class="step-number">01</span><h3>准备掌机</h3><p>一台可运行自制程序的 PS Vita，以及足够存放游戏资源的存储空间。</p><span class="step-footer">你的掌中舞台</span></article>
+        <article class="step reveal"><span class="step-number">02</span><h3>准备游戏资源</h3><p>使用自己持有的 Switch 本体、对应更新与汉化资源，按文档转换为 Vita 配套素材。</p><a class="step-footer" href="https://github.com/ATSPwang618/mofa-vita/blob/perf/render/doc/10-Switch%E5%8E%9F%E7%89%88%E8%B5%84%E6%BA%90%E6%8F%90%E5%8F%96.md" target="_blank" rel="noopener noreferrer">阅读资源文档 <svg class="icon small"><use href="#i-diagonal"/></svg></a></article>
+        <article class="step reveal"><span class="step-number">03</span><h3>安装，开启旅程</h3><p>按项目说明获取或构建 VPK，安装程序，再复制与程序版本匹配的 assets。</p><a class="step-footer" href="https://github.com/ATSPwang618/mofa-vita/blob/perf/render/doc/08-%E7%B4%A0%E6%9D%90%E4%B8%8E%E5%AE%89%E8%A3%85.md" target="_blank" rel="noopener noreferrer">查看安装说明 <svg class="icon small"><use href="#i-diagonal"/></svg></a></article>
+      </div>
+      <div class="path-bar reveal"><span>资源目录</span><code>ux0:data/WitchontheHolyNight/assets/</code><button id="copy-path" aria-label="复制资源目录"><svg class="icon"><use href="#i-copy"/></svg><span>复制路径</span></button></div><p id="copy-feedback" class="copy-feedback" role="status" aria-live="polite"></p>
+      <div class="faq-layout"><div class="faq-intro reveal"><span class="eyebrow">BEFORE THE FIRST PAGE</span><h3>出发前，<br>你可能想知道。</h3></div><div class="faq reveal">
+        <details><summary>这是官方推出的 PS Vita 版本吗？<span>+</span></summary><p>这是由爱好者开发的非官方开源移植项目，基于 AuroraWright/knife 引擎。与 TYPE-MOON、Sony 及原作发行方无隶属关系。</p></details>
+        <details><summary>项目包含完整游戏和汉化数据吗？<span>+</span></summary><p>不包含。源码仓库和 VPK 提供引擎与程序，游戏本体、字体、音视频及汉化资源需要自行准备。程序需要匹配版本的转换资源包。</p></details>
+        <details><summary>全程都能保持 60 FPS 吗？<span>+</span></summary><p>不能保证。实际帧率受到演出复杂度、图层与特效负载影响。项目持续优化重场景，最新状态与已知限制请以仓库文档和对应版本实机记录为准。</p></details>
+        <details><summary>遇到问题，或想参与项目？<span>+</span></summary><p>欢迎通过 <a href="https://github.com/ATSPwang618/mofa-vita/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> 反馈。附上程序版本、场景、复现步骤与日志，有助于定位问题。也欢迎参与代码、文档和实机测试。</p></details>
+      </div></div>
+    </div></section>
+
+    <section class="closing page-width"><div class="closing-star" aria-hidden="true">✧</div><span class="eyebrow reveal">MADE BY FANS. CARRIED BY PASSION.</span><h2 class="reveal">让魔法，<br class="mobile-only">在掌心继续。</h2><p class="reveal">献给仍然热爱 PS Vita，也热爱这个故事的你。</p><a class="button primary reveal" href="https://github.com/ATSPwang618/mofa-vita" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg>前往项目仓库<svg class="icon"><use href="#i-diagonal"/></svg></a><span class="closing-signature">MOFA / VITA</span></section>
+  </main>
+
+  <footer class="site-footer page-width"><div class="footer-top"><a class="brand" href="#home"><img src="assets/favicon.svg" width="30" height="30" alt=""><span>魔法使之夜<small>THE VITA PROJECT</small></span></a><div><a href="../">全部移植作品</a><a href="https://github.com/ATSPwang618/mofa-vita" target="_blank" rel="noopener noreferrer">项目源码 ↗</a><a href="https://github.com/AuroraWright/knife" target="_blank" rel="noopener noreferrer">致谢 knife ↗</a><a href="#home">回到顶部 ↑</a></div></div><div class="footer-bottom"><p>非官方爱好者移植 · 游戏及美术版权归原权利人所有。<br>WITCH ON THE HOLY NIGHT © TYPE-MOON · PlayStation / PS Vita 为 Sony 的商标。</p><span>PORT BY ATSPwang & CONTRIBUTORS<br><span class="footer-love">CRAFTED FOR A LITTLE HANDHELD.</span></span></div></footer>
+
+  <dialog id="lightbox" aria-labelledby="lightbox-title"><div class="lightbox-bar"><span id="lightbox-title">实机画面</span><button id="lightbox-close" aria-label="关闭大图"><svg class="icon"><use href="#i-close"/></svg></button></div><img id="lightbox-image" src="assets/01-title.webp" width="960" height="544" alt=""><div class="lightbox-controls"><button id="lightbox-prev" aria-label="上一张实机截图">←</button><span id="lightbox-count" aria-live="polite">01 / 04</span><button id="lightbox-next" aria-label="下一张实机截图">→</button></div></dialog>
+</body>
+</html>
