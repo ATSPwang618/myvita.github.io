@@ -1,30 +1,5 @@
 'use strict';
 
-// Content stays visible if JavaScript is unavailable.
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-if ('IntersectionObserver' in window && !reducedMotion.matches) {
-  document.documentElement.classList.add('js');
-  const observer = new IntersectionObserver(entries => {
-    for (const entry of entries) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    }
-  }, { threshold: 0.08 });
-  document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
-}
-
-const stars = document.querySelector('.stars');
-if (!reducedMotion.matches) {
-  for (let index = 0; index < 23; index++) {
-    const star = document.createElement('span');
-    star.className = 'star';
-    star.style.cssText = `left:${(index * 37 + 11) % 100}%;top:${(index * 17 + 13) % 90}%;--duration:${5 + index % 7}s;animation-delay:-${index % 5}s`;
-    stars.append(star);
-  }
-}
-
 const menuToggle = document.querySelector('.menu-toggle');
 const mobileNav = document.querySelector('#mobile-nav');
 function closeMenu() {
@@ -44,7 +19,7 @@ document.addEventListener('keydown', event => {
 });
 window.matchMedia('(min-width: 761px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
 
-const scenes = ['苍青之夜', '洋馆灯火', '魔法瞬间'];
+const scenes = ['魔法瞬间', '苍青之夜', '洋馆灯火'];
 const sceneButtons = [...document.querySelectorAll('.scene-button')];
 const heroImages = [...document.querySelectorAll('.hero-image')];
 let requestedScene = 0;

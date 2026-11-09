@@ -7,16 +7,18 @@
   <meta name="description" content="ATSPwang 的 PS Vita 移植作品展览。探索魔法使之夜的掌中旅程，以及更多正在路上的移植作品。">
   <title>阡陌· PS Vita 移植作品展</title>
   <link rel="stylesheet" href="hub.css">
+  <script src="hub.js" defer></script>
 </head>
 <body>
+  <div class="reading-progress" aria-hidden="true"></div><button class="motion-toggle" aria-pressed="false" aria-label="暂停页面动效">暂停动效</button>
+  <div class="hub-atmosphere" aria-hidden="true"><canvas class="atmosphere"></canvas><div class="hub-orbit"></div></div>
   <header class="wrap"><a class="wordmark" href="./">掌中故事<span>个人PS Vita 移植作品展</span></a><a class="source" href="https://github.com/ATSPwang618" target="_blank" rel="noopener noreferrer">ATSPwang / GitHub ↗</a></header>
-  <main class="wrap">
-    <section class="intro" aria-labelledby="title"><p class="intro-note">献给一台值得被记住的掌机</p><h1 id="title">VITA的故事，<br>依然未完。</h1><div class="intro-bottom"><p>把喜爱的作品带到 PS Vita。<br>这里记录每一次移植的探索，也展示它们如今的模样。</p><a href="#works">浏览移植作品 <span>↓</span></a></div></section>
-    <section id="works" aria-labelledby="works-title"><div class="section-top"><h2 id="works-title">作品展览</h2><span>持续更新的掌中收藏</span></div>
-      <a class="featured" href="mofa-vita/" aria-label="进入魔法使之夜 PS Vita 宣传网站"><img src="mofa-vita/assets/hero-aoko.webp" width="1024" height="614" alt="魔法使之夜的苍崎青子"><div class="art-shade"></div><div class="project-copy"><span class="status">现已开放展览</span><p class="project-en">Witch on the Holy Night</p><h3>魔法使之夜</h3><p class="project-description">从 2023 年的最初预览，到 2026 年的掌中之夜。<br>原生 GXM、540p 演出，以及三年多的开发历程。</p><span class="enter">走进魔法之夜 <b>↗</b></span></div><span class="project-format">PS Vita / 视觉小说</span></a>
-      <div class="next-work"><span class="next-mark" aria-hidden="true">＋</span><div><h3>下一段故事，正在路上</h3><p>更多移植作品将在这里拥有自己的展览空间。</p></div><span class="coming">待上线</span></div>
+  <main class="wrap collection">
+    <section class="intro" aria-labelledby="title"><p class="intro-note">阡陌的移植作品</p><h1 id="title">VITA的故事，<br>依然未完。</h1><p class="intro-description">为这台掌机移植喜欢的游戏。<br>这里收录实机画面、开发记录，<br>以及每个项目的使用说明。</p><div class="collection-device" data-tilt aria-hidden="true"><img class="collection-screen" src="mofa-vita/assets/01-title.webp" width="960" height="544" alt=""><img class="collection-frame" src="mofa-vita/assets/vita-device.webp" width="1154" height="519" alt=""></div><p class="owner-note">个人 PS Vita 移植作品展</p></section>
+    <section id="works" class="works" aria-labelledby="works-title"><h2 id="works-title">当前展览</h2>
+      <a class="featured" data-tilt href="mofa-vita/" aria-label="进入魔法使之夜 PS Vita 宣传网站"><div class="cover-art"><img src="mofa-vita/assets/hero-magic.webp" width="1024" height="760" alt="苍崎青子施展魔法的游戏原画"><span class="cover-platform">PlayStation Vita</span><span class="cover-index" aria-hidden="true">01</span></div><div class="project-copy"><p class="project-en">Witch on the Holy Night</p><h3>魔法使之夜</h3><p class="project-description">2023.06 — 2026.11<br>从最初预览到原生移植，三年多的开发记录。</p><span class="enter">进入作品展览 <b aria-hidden="true">↗</b></span></div></a>
+      <div class="next-work"><h3>其他作品</h3><p>页面整理中，完成后在这里更新。</p></div>
     </section>
-    <section class="closing"><span aria-hidden="true">✧</span><p>让喜欢的故事，陪这台掌机走得更远。</p></section>
   </main>
   <footer class="wrap"><span>ATSPwang &amp; contributors</span><p>爱好者移植作品展 · 各作品及美术版权归原权利人所有</p><a href="https://github.com/ATSPwang618/myvita.github.io" target="_blank" rel="noopener noreferrer">网站仓库 ↗</a></footer>
 </body>
