@@ -7,7 +7,7 @@ OUT = ROOT / '_site'
 if OUT.exists():
     raise SystemExit('_site already exists; use a fresh build directory.')
 OUT.mkdir()
-for name in ('index.html', 'hub.css', 'hub.js', '.nojekyll'):
+for name in ('index.html', 'hub.css', 'hub.js', 'hub-i18n.js', 'language.js', '.nojekyll'):
     shutil.copy2(ROOT / name, OUT / name)
 projects = []
 for path in sorted(ROOT.iterdir()):

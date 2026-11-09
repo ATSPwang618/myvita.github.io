@@ -34,11 +34,12 @@
   function apply() {
     document.body.classList.toggle('motion-paused',paused);
     control.setAttribute('aria-pressed',String(paused));
-    control.setAttribute('aria-label',paused?'开启页面动效':'暂停页面动效');
-    control.textContent=paused?'开启动效':'暂停动效';
+    control.setAttribute('aria-label',window.siteI18n.t(paused?'开启页面动效':'暂停页面动效'));
+    control.textContent=window.siteI18n.t(paused?'开启动效':'暂停动效');
     if(paused){cancelAnimationFrame(frame);frame=0;context?.clearRect(0,0,width,height);}
     else run();
   }
+  document.addEventListener('languagechange', apply);
   control.addEventListener('click',()=>{paused=!paused;apply();});
   preference.addEventListener('change',()=>{paused=preference.matches;apply();});
   document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(frame);frame=0;}else run();});

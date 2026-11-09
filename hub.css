@@ -10,3 +10,11 @@ body{background:radial-gradient(ellipse at 5% 10%,#37235b55,transparent 50%),rad
 @keyframes cover-breathe{to{transform:scale(1.065)}}@keyframes hardware-float{0%,100%{translate:0 0;rotate:-2deg}50%{translate:0 -10px;rotate:0deg}}@keyframes orbit-breathe{from{transform:scale(.9);opacity:.5}to{transform:scale(1.05);opacity:1}}
 @media(max-width:600px){.collection{gap:32px;padding-top:18px}.intro h1{font-size:40px}.cover-art{aspect-ratio:1.25}.project-copy h3{font-size:35px}.cover-index{font-size:65px}.project-copy{padding-top:10px}.motion-toggle{right:12px;bottom:12px;font-size:10px}.hub-orbit{width:150vw;height:150vw;left:-70vw;top:20vh}.collection-device{display:none}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}[data-tilt]{transform:none!important}}
+
+/* Language selection is shared across exhibitions without reloading the page. */
+.language-toggle{flex-shrink:0;border:1px solid #a9c7ed70;border-radius:3px;padding:8px 12px;background:#10172dcc;color:#e1f1ff;font:12px/1.4 "Segoe UI",sans-serif;cursor:pointer;min-height:38px}
+.language-toggle:hover{background:#2a3b5b}.language-toggle:focus-visible{outline:2px solid #b4eaf0;outline-offset:4px}
+html[lang="en"]{--serif:Georgia,"Times New Roman",serif}
+
+header .source{margin-left:auto}html[lang="en"] .project-copy h3{font-size:clamp(25px,3.2vw,38px);line-height:1.25}html[lang="en"] .wordmark{font-size:19px}
+@media(max-width:600px){header{gap:12px;flex-wrap:wrap}header .source{font-size:9px}.language-toggle{padding:8px 10px}html[lang="en"] .wordmark{max-width:150px;font-size:17px}html[lang="en"] h1{font-size:35px;line-height:1.35}}

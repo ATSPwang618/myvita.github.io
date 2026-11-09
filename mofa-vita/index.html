@@ -15,12 +15,20 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" as="image" href="assets/hero-magic.webp" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
+  <script src="i18n.js" defer></script>
+  <script src="../language.js" defer></script>
   <script src="app.js" defer></script>
   <script src="motion.js" defer></script>
+  <script src="audio.js" defer></script>
 </head>
 <body>
   <div class="reading-progress" aria-hidden="true"></div>
   <button class="motion-toggle" aria-pressed="false" aria-label="暂停页面动效">暂停动效</button>
+  <audio id="background-music" src="assets/audio/M01s.ogg" autoplay loop preload="auto"></audio>
+  <div class="music-player">
+    <button class="music-toggle" type="button" aria-pressed="false" aria-label="播放音乐 · M01s"><span class="music-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span><span class="music-label">播放音乐</span><small>M01s · <span>单曲循环</span></small></span></button>
+    <p id="music-status" role="status" aria-live="polite"></p>
+  </div>
   <a class="skip-link" href="#main">跳至主要内容</a>
   <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
@@ -38,6 +46,7 @@
     <a class="brand" href="#home" aria-label="魔法使之夜 PS Vita 首页"><img src="assets/favicon.svg" width="34" height="34" alt=""><span>魔法使之夜<small>PS Vita 移植版</small></span></a>
     <nav class="desktop-nav" aria-label="主导航"><a href="#project">关于移植</a><a href="#gallery">实机画面</a><a href="#history">开发历程</a><a href="#start">安装与资源</a></nav>
     <a class="header-github" aria-label="GitHub 项目仓库" href="https://github.com/ATSPwang618/mofa-vita" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg><span>GitHub</span><svg class="icon small"><use href="#i-diagonal"/></svg></a>
+    <button class="language-toggle" type="button" lang="en" aria-label="Switch to English">English</button>
     <button class="menu-toggle" aria-label="打开导航" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
   </header>
   <nav id="mobile-nav" class="mobile-nav" aria-label="移动导航" hidden><a href="#project">关于移植 <span>01</span></a><a href="#gallery">实机画面 <span>02</span></a><a href="#history">开发历程 <span>03</span></a><a href="#start">安装与资源 <span>04</span></a></nav>

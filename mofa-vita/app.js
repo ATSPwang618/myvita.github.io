@@ -1,16 +1,17 @@
 'use strict';
+const t = key => window.siteI18n.t(key);
 
 const menuToggle = document.querySelector('.menu-toggle');
 const mobileNav = document.querySelector('#mobile-nav');
 function closeMenu() {
   mobileNav.hidden = true;
   menuToggle.setAttribute('aria-expanded', 'false');
-  menuToggle.setAttribute('aria-label', '打开导航');
+  menuToggle.setAttribute('aria-label', t('打开导航'));
 }
 menuToggle.addEventListener('click', () => {
   const open = menuToggle.getAttribute('aria-expanded') !== 'true';
   menuToggle.setAttribute('aria-expanded', String(open));
-  menuToggle.setAttribute('aria-label', open ? '关闭导航' : '打开导航');
+  menuToggle.setAttribute('aria-label', t(open ? '关闭导航' : '打开导航'));
   mobileNav.hidden = !open;
 });
 mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
@@ -34,7 +35,7 @@ sceneButtons.forEach((button, index) => button.addEventListener('click', async (
     item.classList.toggle('is-active', i === index);
     item.setAttribute('aria-pressed', String(i === index));
   });
-  document.querySelector('.scene-label').textContent = `0${index + 1} / ${scenes[index]}`;
+  document.querySelector('.scene-label').textContent = `0${index + 1} / ${t(scenes[index])}`;
 }));
 
 const galleryItems = [...document.querySelectorAll('.gallery-item')];
@@ -84,14 +85,24 @@ copyButton.addEventListener('click', async () => {
   try {
     if (!navigator.clipboard || !window.isSecureContext) throw new Error('clipboard unavailable');
     await navigator.clipboard.writeText(path);
-    feedback.textContent = '已复制资源目录';
-    copyButton.querySelector('span').textContent = '已复制';
+    feedback.textContent = t('已复制资源目录');
+    copyButton.querySelector('span').textContent = t('已复制');
   } catch {
-    feedback.textContent = '请长按或选择上方路径，手动复制。';
+    feedback.textContent = t('请长按或选择上方路径，手动复制。');
     const range = document.createRange();
     range.selectNodeContents(document.querySelector('.path-bar code'));
     const selection = window.getSelection();
     selection.removeAllRanges(); selection.addRange(range);
   }
-  feedbackTimer = window.setTimeout(() => { feedback.textContent = ''; copyButton.querySelector('span').textContent = '复制路径'; }, 4500);
+  feedbackTimer = window.setTimeout(() => { feedback.textContent = ''; copyButton.querySelector('span').textContent = t('复制路径'); }, 4500);
+});
+
+document.addEventListener('languagechange', () => {
+  menuToggle.setAttribute('aria-label', t(mobileNav.hidden ? '打开导航' : '关闭导航'));
+  const active = sceneButtons.findIndex(button => button.classList.contains('is-active'));
+  document.querySelector('.scene-label').textContent = `0${active + 1} / ${t(scenes[active])}`;
+  if (lightbox.open) showImage(currentImage);
+  clearTimeout(feedbackTimer);
+  feedback.textContent = '';
+  copyButton.querySelector('span').textContent = t('复制路径');
 });

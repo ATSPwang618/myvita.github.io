@@ -20,3 +20,6 @@ Pages 使用 **GitHub Actions** 作为发布来源。推送 `main` 后自动构�
 - 魔法使之夜：https://atspwang618.github.io/myvita.github.io/mofa-vita/
 
 项目站点部署在 `/myvita.github.io/` 子路径下。内部导航使用相对路径；更换域名时同时更新各项目的分享图片地址。
+
+
+导航首页与魔夜宣传页支持中文 / English 即时切换，默认中文并保存访客的语言选择。公共切换逻辑在 `language.js`，首页译文在 `hub-i18n.js`，魔夜译文与循环 BGM 均保存在 `mofa-vita/`。构建脚本包含这些静态文件；没有新增运行时服务或框架。
